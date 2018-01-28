@@ -37,4 +37,17 @@ public class RecipeBook {
         return matchingRecipes;
     }
 
+    public List<Recipe> getRecipes() {
+        return recipes;
+    }
+
+    public void setRecipes(List<Recipe> recipes) {
+        this.recipes = recipes;
+    }
+
+    public void addRecipe(Recipe recipeToAdd) {
+        if (recipeToAdd != null) {
+            this.recipes.add(recipeToAdd);
+        }
+    }
 }
