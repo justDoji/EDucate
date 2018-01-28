@@ -13,7 +13,7 @@ public class RecipeBookApplication {
     public static void main(String[] args) throws IOException {
 
         RecipeReader recipeReader = new RecipeReader(
-                "E:\\Documents\\_development\\git\\EDucate\\sample-code\\RecipeBook\\resources\\recipes");
+                args[0]);
         List<Recipe> recipes = recipeReader.getRecipes();
         RecipeBook book = new RecipeBook(recipes);
 
